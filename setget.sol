@@ -1,36 +1,36 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity 0.8.20;
+pragma solidity 0.8.19;
 
-contract HelloWorld {
-    uint a;
+contract  setget_contract{
+    int a;
     uint b;
-    uint c;
-    uint d;
+    string c;
+    bool d;
 
-    function setA(uint _a) public {
+    function setA(int _a) public {
         a = _a;
     }
     function setB(uint _b) public {
         b = _b;
     }
-    function setC(uint _c) public {
+    function setC(string memory _c) public {
         c = _c;
     }
-    function setD(uint _d) public {
+    function setD(bool _d) public {
         d = _d;
     }
 
-    function getA() public view returns(uint) {
+    function getA() public view returns(int) {
         return a;
     }
     function getB() public view returns(uint) {
         return b;
     }
-    function getC() public view returns(uint) {
+    function getC() public view returns(string memory) {
         return c;
     }
-    function getD() public view returns(uint) {
+    function getD() public view returns(bool) {
         return d;
     }
 }
